@@ -1,0 +1,9 @@
+numpy
+scipy
+pandas
+nltk
+gensim
+spacy
+flask
+matplotlib
+seaborn
