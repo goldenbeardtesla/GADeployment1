@@ -12,12 +12,21 @@ class Ingest:
             classArr:An Array of Strings(classnames)
 
         """
-        classArr = os.listdir(path)
+        classArr = os.listdir(basePath)
 
         return classArr
 
-    def readContentFromDir():
-        pass
+    def readContentFromDir(basePath,className):
+
+        classDir = os.path.join(basePath,className)
+        files = os.listdir(classDir)
+        contentList = []
+        for file in files:
+            with open(os.path.join(classDir,file)) as fl:
+                content = fl.read()
+            contentList.append(content)
+
+        return contentList:
 
     def collectData():
         pass
