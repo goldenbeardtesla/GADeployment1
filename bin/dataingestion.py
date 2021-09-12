@@ -48,7 +48,7 @@ def getData():
     return json.dumps(finalData)
 
 
-app.run('localhost', 5000)
+app.run('0.0.0.0', 80)
 
 
 
